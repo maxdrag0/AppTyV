@@ -1,0 +1,76 @@
+﻿@model AppTyV.Models.Jugador
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Crea tu perfil!</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nacimiento" class="control-label"></label>
+                <input asp-for="Nacimiento" type="text" id="Nacimiento" class="form-control" />
+                <span asp-validation-for="Nacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Puesto" class="control-label"></label>
+                <select asp-for="Puesto" class="form-control" asp-items="Html.GetEnumSelectList<Puesto>()">
+                    <option selected="selected" value="">Please select</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="PiernaHabil" class="control-label"></label>
+                <select asp-for="PiernaHabil" class="form-control" asp-items="Html.GetEnumSelectList<PiernaHabil>()">
+                    <option selected="selected" value="">Please select</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sexo" class="control-label"></label>
+                <select asp-for="Sexo" class="form-control" asp-items="Html.GetEnumSelectList<Sexo>()">
+                    <option selected="selected" value="">Please select</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Terminar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Vuelve a la lista de jugadores</a>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#Nacimiento").datepicker({
+                maxDate: '0',
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "-100:+0",
+                dateFormat: 'yy-mm-dd'
+            });
+        });
+    </script>
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+}
