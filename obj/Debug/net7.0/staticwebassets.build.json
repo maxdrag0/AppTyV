@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sQ+S6WlokDe2aeFsjf+ubE3UVMWZNM08JCzlnigv8Lw=",
+  "Hash": "syHP4Crt3OVXM7Ori9Jekj2aglgxMgxfP8ygloZAzDE=",
   "Source": "AppTyV",
   "BasePath": "_content/AppTyV",
   "Mode": "Default",
@@ -1953,23 +1953,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\pelota.png"
-    },
-    {
-      "Identity": "C:\\Users\\Max\\Documents\\1-Maxi\\3- Formación\\ORT\\PENDIENTE\\PNT1\\AppTyV\\AppTyV\\wwwroot\\pelota.svg",
-      "SourceId": "AppTyV",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Max\\Documents\\1-Maxi\\3- Formación\\ORT\\PENDIENTE\\PNT1\\AppTyV\\AppTyV\\wwwroot\\",
-      "BasePath": "_content/AppTyV",
-      "RelativePath": "pelota.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\pelota.svg"
     },
     {
       "Identity": "C:\\Users\\Max\\Documents\\1-Maxi\\3- Formación\\ORT\\PENDIENTE\\PNT1\\AppTyV\\AppTyV\\wwwroot\\traje-cv.png",
