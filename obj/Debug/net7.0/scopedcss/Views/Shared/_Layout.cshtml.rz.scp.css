@@ -8,7 +8,12 @@ a.navbar-brand[b-hv0uumntdr] {
 }
 
 a[b-hv0uumntdr] {
-  color: #0077cc;
+  color: blueviolet;
+}
+
+img[b-hv0uumntdr]{
+    max-height:500px;
+    max-width:500px;
 }
 
 .btn-primary[b-hv0uumntdr] {
@@ -40,9 +45,10 @@ button.accept-policy[b-hv0uumntdr] {
 }
 
 .footer[b-hv0uumntdr] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
 }
